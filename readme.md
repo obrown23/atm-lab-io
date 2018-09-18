@@ -4,29 +4,26 @@ We're going to build an application to track checking and savings account balanc
 
 ## Pseudocode
 
-Spend up to 20 minutes to write some pseudocode for the lab. Think carefully about every step involved in using an ATM. For example, it allows users to input a dollar amount when they want deposit money. Also, think about how there are two types of accounts -- checking and savings. Take a look at the **Specifications** below to guide your pseudocode.
+Spend around 20 minutes to write some pseudocode for the lab. Think carefully about every step involved in using an ATM. For example, it allows users to input a dollar amount when they want deposit money. Also, think about how there are two types of accounts -- checking and savings. Take a look at the **Specifications** below to guide your pseudocode.
 
 Include your pseudocode as comments within your program.
 
 ## Requirements
 
-**Reminder: This is a graded lab assigment**
+**Reminder: This is a graded assignment**
 
-
->You must achieve a score of 75% or above to pass this assignment **(6 of 8 requirements)**. If you are unable to complete the lab with at least 6 completed requirements, you will have one week to redo and resubmit the lab.
-
+>You must achieve a score greater than 6 of 8 in order to pass. If you are unable to complete the lab with at least 6 completed requirements, you will have one week to redo and resubmit the lab.
 
 ### Grading Rubric
 
-- users can deposit money into an account
-- users can withdraw money from an account
-- account does not allow a negative balance
+- Users can deposit money into an account
+- Users can withdraw money from an account
+- Account does not allow a negative balance
 - The color of a bank account should reflect its balance. (There's a CSS class called `.zero` already written for this.)
 - Student uses git to commit work early and often
-- two accounts have independent functionality
-- student uses consistent indentation to write readable code ([brief style-guide](https://courses.cs.washington.edu/courses/cse154/17au/styleguide/js/spacing-indentation-js.html))
-- student left clear comments throughout code
-
+- Two accounts have independent functionality
+- Student uses consistent indentation to write readable code ([brief style-guide](https://courses.cs.washington.edu/courses/cse154/17au/styleguide/js/spacing-indentation-js.html))
+- Student left clear comments throughout code
 
 ## Commits to Make (Suggested)
 
@@ -60,5 +57,6 @@ Note that these commits are all for the checking account only. Take this one acc
 ### Overdraft Protection
 
 What happens when the user wants to withdraw more money from the checking account than is in the account?
+
 - If a withdrawal can be covered by the balances in both accounts, bring the withdrawn-from account down to $0 and take the remainder from the other account.
 - If the withdrawn amount is more than the combined account balance, display an error.
