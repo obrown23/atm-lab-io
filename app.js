@@ -14,8 +14,8 @@
 
 // $('withdrawCheckingExchange').bind("click", minusMeduimOfExchange)
 // $('withdrawSavingExchange').bind("click", minusMeduimOfExchange)
-let checkingBalance= 0
-
+let checkingBalance= 0;
+let savingsBalance= 0;
 //deposit will take value from input then add to value and show sum
 $(function(){
     $("#checking .deposit").on('click', function(){
@@ -24,6 +24,8 @@ $(function(){
         checkingDeposit= Number(userInput);
         checkingBalance = checkingBalance + checkingDeposit;
        console.log(checkingBalance)
+
+       let display = $('#checking .balance').html("$" + checkingBalance)
 
     })
 
@@ -40,7 +42,7 @@ $(function(){
         checkingBalance = checkingBalance + checkingDeposit;
        console.log(checkingBalance)
 
-       let display = $('#checking')
+       let display = $('#checking .balance').html("$" + checkingBalance)
 
     })
 
@@ -49,5 +51,37 @@ $(function(){
     }
        
 )  
+$(function(){
+    $("#savings .deposit").on('click', function(){
+        let userInput = document.querySelector("#savings .input").value;
+         // console.log(userInput)
+        savingsDeposit= Number(userInput);
+        savingsBalance = savingsBalance + savingsDeposit;
+       console.log(savingsBalance)
 
+       let display = $('#savings .balance').html("$" + savingsBalance)
 
+    })
+
+    // Let newValue = newInput + balance (
+    //     return (newValue))
+    }
+       
+)
+$(function(){
+    $("#savings.withdraw").on('click', function(){
+        let userInput = document.querySelector("#savings.input").value;
+         // console.log(userInput)
+        savingsDeposit= Number(userInput);
+        savingsBalance = savingsBalance + savingsDeposit;
+       console.log(savingsBalance)
+
+       let display = $('#savings.balance').html("$" + savingsBalance)
+
+    })
+
+    // Let newValue = newInput + balance (
+    //     return (newValue))
+    }
+       
+) 
