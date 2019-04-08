@@ -7,11 +7,47 @@
 // accounts are independent of each other
 
 
-$('depositCheckingExchange').on("click", addMeduimOfExchange)
-$('depositCheckingExchange').on("click", addMeduimOfExchange)
+//  $('deposit').on("click", sumMeduimOfExchange)
+//  $('depositSavingExchange').on("click", sumMeduimOfExchange)
 
-// listener for withdrawal button
+// // listener for withdrawal button
 
-$('withdrawSavingExchange').on("click", minusMeduimOfExchange)
-$('withdrawSavingExchange').on("click", minusMeduimOfExchange)
+// $('withdrawCheckingExchange').bind("click", minusMeduimOfExchange)
+// $('withdrawSavingExchange').bind("click", minusMeduimOfExchange)
+let checkingBalance= 0
+
+//deposit will take value from input then add to value and show sum
+$(function(){
+    $("#checking .deposit").on('click', function(){
+        let userInput = document.querySelector("#checking .input").value;
+         // console.log(userInput)
+        checkingDeposit= Number(userInput);
+        checkingBalance = checkingBalance + checkingDeposit;
+       console.log(checkingBalance)
+
+    })
+
+    // Let newValue = newInput + balance (
+    //     return (newValue))
+    }
+       
+)  
+$(function(){
+    $("#checking .withdraw").on('click', function(){
+        let userInput = document.querySelector("#checking .input").value;
+         // console.log(userInput)
+        checkingDeposit= Number(userInput);
+        checkingBalance = checkingBalance + checkingDeposit;
+       console.log(checkingBalance)
+
+       let display = $('#checking')
+
+    })
+
+    // Let newValue = newInput + balance (
+    //     return (newValue))
+    }
+       
+)  
+
 
