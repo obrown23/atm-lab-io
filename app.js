@@ -25,7 +25,7 @@ $(function(){
         checkingBalance = checkingBalance + checkingDeposit;
        console.log(checkingBalance)
 
-       let display = $('#checking .balance').html("$" + checkingBalance)
+     display = $('#checking .balance').html("$" + checkingBalance)
 
     })
 
